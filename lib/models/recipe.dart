@@ -14,9 +14,9 @@ class Recipe {
   factory Recipe.fromJson(Map<String, dynamic> json) {
     String name = json['seo']?['web']?['meta-tags']?['title'] ?? 'No Title';
     String imageUrl = json['seo']?['web']?['image-url'] ?? '';
-    double rating = json['rating']?.toDouble() ?? 0.0;
-    String totalTime = json['totalTime'] ?? 'No Time';
-
+    double rating = json['content']?['details']?['rating']?.toDouble() ?? 0.0;
+    String totalTime = json['content']?['details']?['totalTime'] ?? 'No Time';
+    
     return Recipe(
       name: name,
       imageUrl: imageUrl,

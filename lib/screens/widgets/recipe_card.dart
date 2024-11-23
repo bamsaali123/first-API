@@ -97,7 +97,7 @@ class RecipeCard extends StatelessWidget {
                       Text(cookTime),
                     ],
                   ),
-                )
+                ),
               ],
             ),
             alignment: Alignment.bottomLeft,

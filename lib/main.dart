@@ -8,10 +8,9 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
-    return MaterialApp (
+    return MaterialApp(
       title: 'Food recipe',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -19,10 +18,9 @@ class MyApp extends StatelessWidget {
         primaryColor: Colors.white,
         textTheme: TextTheme(
           bodyMedium: TextStyle(color: Colors.white),
-        )
+        ),
       ),
-     home: HomePage(),
-
-       );
+      home: HomePage(),
+    );
   }
 }
